@@ -26,9 +26,9 @@ a:hover {
 }
 
 body {
+  overflow: hidden;
+
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-size: cover;
@@ -39,6 +39,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 0;
 }
 
 button {
