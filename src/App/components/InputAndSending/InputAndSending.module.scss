@@ -1,0 +1,61 @@
+.inputAndSending {
+	position: relative;
+	input {
+		background-color: white;
+		margin-bottom: 6vh;
+		border-radius: 16px;
+		font-size: 20px;
+		height: 71px;
+		width: 100%;
+		color: black;
+		padding: 0 70px 0 30px;
+		outline: none;
+	}
+
+	.sentBtn {
+		position: absolute;
+		z-index: 1;
+		top: 15px;
+		right: 20px;
+		cursor: pointer;
+		background-color: #007afe;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+
+		&:hover {
+			background-color: blue;
+		}
+	}
+
+	.disabled {
+		background-color: gray;
+		cursor: default;
+
+		&:hover {
+			background-color: gray;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.inputAndSending {
+		input {
+			height: 50px;
+		}
+		.sentBtn {
+			height: 30px;
+			width: 30px;
+			top: 10px;
+			right: 15px;
+
+			img {
+				height: 20px;
+				width: 20px;
+			}
+		}
+	}
+}

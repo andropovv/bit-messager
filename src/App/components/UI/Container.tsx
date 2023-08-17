@@ -1,11 +1,13 @@
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import styles from "./Container.module.scss";
 
-const Container: FC<{ children: ReactNode; style?: string }> = ({
-  children,
-  style = "",
-}) => {
-  return <div className={styles.container + " " + style}>{children}</div>;
+interface IContainer {
+	children: ReactNode;
+	style?: string;
+}
+
+const Container: FC<IContainer> = ({ children, style = "" }) => {
+	return <div className={styles.container + " " + style}>{children}</div>;
 };
 
 export default Container;

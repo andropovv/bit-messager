@@ -1,0 +1,63 @@
+.userContainer {
+	max-width: 60%;
+	margin: 10px;
+	display: flex;
+	align-self: flex-end;
+	animation: new-mes 0.4s;
+}
+.botContainer {
+	max-width: 60%;
+	margin: 10px;
+	display: flex;
+	animation: new-mes 0.4s;
+}
+
+.userMes {
+	border-radius: 28px;
+	background: #007afe;
+	color: white;
+	padding: 12px 20px;
+	margin: 0 8px;
+}
+
+.botMes {
+	border-radius: 28px;
+	background: rgba(34, 118, 245, 0.2);
+	color: black;
+	padding: 12px 20px;
+	margin: 0 8px;
+}
+
+.userAvatar {
+	width: 40px;
+	height: 40px;
+	background-color: #d3e4fd;
+	border-radius: 50%;
+	color: #065ebc;
+	font-size: 18px;
+	font-weight: 800;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+}
+
+.botAvatar {
+	margin: 0 5px;
+	min-width: 40px;
+	height: 40px;
+	background-color: #007afe;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes new-mes {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
